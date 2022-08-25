@@ -12,6 +12,31 @@
 		76C389BF28B7A4F6004F30A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C389BE28B7A4F6004F30A3 /* Assets.xcassets */; };
 		76C389D528B7A73F004F30A3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 76C389D428B7A73F004F30A3 /* SnapKit */; };
 		76C389D728B7A757004F30A3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C389D628B7A757004F30A3 /* BaseViewController.swift */; };
+		76C389D928B7ABA3004F30A3 /* MainShoppingLIstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C389D828B7ABA3004F30A3 /* MainShoppingLIstViewController.swift */; };
+		76C389DB28B7ABB8004F30A3 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C389DA28B7ABB8004F30A3 /* BaseView.swift */; };
+		76C389DD28B7AC28004F30A3 /* MainShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C389DC28B7AC28004F30A3 /* MainShoppingListView.swift */; };
+		76C389E228B7ADD0004F30A3 /* GmarketSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76C389DF28B7ADD0004F30A3 /* GmarketSansBold.otf */; };
+		76C389E328B7ADD0004F30A3 /* GmarketSansMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76C389E028B7ADD0004F30A3 /* GmarketSansMedium.otf */; };
+		76C389E428B7ADD0004F30A3 /* GmarketSansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76C389E128B7ADD0004F30A3 /* GmarketSansLight.otf */; };
+		76C389E928B7B022004F30A3 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C389E828B7B022004F30A3 /* Design.swift */; };
+		76C389EC28B7C0E9004F30A3 /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C389EB28B7C0E9004F30A3 /* ShoppingListTableViewCell.swift */; };
+		76C389F028B7DC8F004F30A3 /* AddingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C389EF28B7DC8F004F30A3 /* AddingItemView.swift */; };
+		76C389F228B7DCC1004F30A3 /* AddingItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C389F128B7DCC1004F30A3 /* AddingItemViewController.swift */; };
+		76C389F528B7DF0D004F30A3 /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 76C389F428B7DF0D004F30A3 /* TextFieldEffects */; };
+		76C389F728B7EB04004F30A3 /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C389F628B7EB04004F30A3 /* ImageSearchViewController.swift */; };
+		76C389F928B7EB5B004F30A3 /* ImageSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C389F828B7EB5B004F30A3 /* ImageSearchView.swift */; };
+		76C389FB28B7EEDD004F30A3 /* ImageSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C389FA28B7EEDD004F30A3 /* ImageSearchCollectionViewCell.swift */; };
+		76C389FD28B7EF80004F30A3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 76C389FC28B7EF80004F30A3 /* .gitignore */; };
+		76C389FF28B7EF9D004F30A3 /* APIkey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C389FE28B7EF9D004F30A3 /* APIkey.swift */; };
+		76C38A0128B7EFDD004F30A3 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C38A0028B7EFDD004F30A3 /* EndPoint.swift */; };
+		76C38A0428B7F01E004F30A3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C38A0328B7F01E004F30A3 /* APIManager.swift */; };
+		76C38A0728B7F06F004F30A3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 76C38A0628B7F06F004F30A3 /* Alamofire */; };
+		76C38A0A28B7F07E004F30A3 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 76C38A0928B7F07E004F30A3 /* SwiftyJSON */; };
+		76C38A0D28B7F239004F30A3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 76C38A0C28B7F239004F30A3 /* Kingfisher */; };
+		76C38A1028B7F624004F30A3 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C38A0F28B7F624004F30A3 /* RealmModel.swift */; };
+		76C38A1328B7F6E1004F30A3 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 76C38A1228B7F6E1004F30A3 /* Realm */; };
+		76C38A1528B7F6E1004F30A3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 76C38A1428B7F6E1004F30A3 /* RealmSwift */; };
+		76C38A1828B7FD37004F30A3 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C38A1728B7FD37004F30A3 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +46,25 @@
 		76C389BE28B7A4F6004F30A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76C389C328B7A4F6004F30A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "iOS-ShoppingList/Resources/Info.plist"; sourceTree = SOURCE_ROOT; };
 		76C389D628B7A757004F30A3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		76C389D828B7ABA3004F30A3 /* MainShoppingLIstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainShoppingLIstViewController.swift; sourceTree = "<group>"; };
+		76C389DA28B7ABB8004F30A3 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		76C389DC28B7AC28004F30A3 /* MainShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainShoppingListView.swift; sourceTree = "<group>"; };
+		76C389DF28B7ADD0004F30A3 /* GmarketSansBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GmarketSansBold.otf; path = ../../../../../../../Downloads/GmarketSansOTF/GmarketSansBold.otf; sourceTree = "<group>"; };
+		76C389E028B7ADD0004F30A3 /* GmarketSansMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GmarketSansMedium.otf; path = ../../../../../../../Downloads/GmarketSansOTF/GmarketSansMedium.otf; sourceTree = "<group>"; };
+		76C389E128B7ADD0004F30A3 /* GmarketSansLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GmarketSansLight.otf; path = ../../../../../../../Downloads/GmarketSansOTF/GmarketSansLight.otf; sourceTree = "<group>"; };
+		76C389E828B7B022004F30A3 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		76C389EB28B7C0E9004F30A3 /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
+		76C389EF28B7DC8F004F30A3 /* AddingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingItemView.swift; sourceTree = "<group>"; };
+		76C389F128B7DCC1004F30A3 /* AddingItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingItemViewController.swift; sourceTree = "<group>"; };
+		76C389F628B7EB04004F30A3 /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
+		76C389F828B7EB5B004F30A3 /* ImageSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchView.swift; sourceTree = "<group>"; };
+		76C389FA28B7EEDD004F30A3 /* ImageSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		76C389FC28B7EF80004F30A3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		76C389FE28B7EF9D004F30A3 /* APIkey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIkey.swift; sourceTree = "<group>"; };
+		76C38A0028B7EFDD004F30A3 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		76C38A0328B7F01E004F30A3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		76C38A0F28B7F624004F30A3 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		76C38A1728B7FD37004F30A3 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +72,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C38A1328B7F6E1004F30A3 /* Realm in Frameworks */,
+				76C38A0728B7F06F004F30A3 /* Alamofire in Frameworks */,
+				76C38A1528B7F6E1004F30A3 /* RealmSwift in Frameworks */,
 				76C389D528B7A73F004F30A3 /* SnapKit in Frameworks */,
+				76C38A0A28B7F07E004F30A3 /* SwiftyJSON in Frameworks */,
+				76C389F528B7DF0D004F30A3 /* TextFieldEffects in Frameworks */,
+				76C38A0D28B7F239004F30A3 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +88,7 @@
 		76C389A928B7A4F5004F30A3 = {
 			isa = PBXGroup;
 			children = (
+				76C389FC28B7EF80004F30A3 /* .gitignore */,
 				76C389B428B7A4F5004F30A3 /* iOS-ShoppingList */,
 				76C389B328B7A4F5004F30A3 /* Products */,
 			);
@@ -55,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				76C389C928B7A5CA004F30A3 /* Application */,
+				76C389E528B7AEC0004F30A3 /* Core */,
 				76C389CA28B7A5DB004F30A3 /* Resources */,
 				76C389CC28B7A703004F30A3 /* View */,
 				76C389CD28B7A708004F30A3 /* ViewControllers */,
@@ -74,6 +126,7 @@
 		76C389CA28B7A5DB004F30A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				76C389DE28B7ADAB004F30A3 /* Fonts */,
 				76C389BE28B7A4F6004F30A3 /* Assets.xcassets */,
 				76C389C328B7A4F6004F30A3 /* Info.plist */,
 			);
@@ -83,6 +136,10 @@
 		76C389CC28B7A703004F30A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				76C389DA28B7ABB8004F30A3 /* BaseView.swift */,
+				76C389DC28B7AC28004F30A3 /* MainShoppingListView.swift */,
+				76C389EF28B7DC8F004F30A3 /* AddingItemView.swift */,
+				76C389F828B7EB5B004F30A3 /* ImageSearchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -91,8 +148,76 @@
 			isa = PBXGroup;
 			children = (
 				76C389D628B7A757004F30A3 /* BaseViewController.swift */,
+				76C389D828B7ABA3004F30A3 /* MainShoppingLIstViewController.swift */,
+				76C389F128B7DCC1004F30A3 /* AddingItemViewController.swift */,
+				76C389F628B7EB04004F30A3 /* ImageSearchViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		76C389DE28B7ADAB004F30A3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				76C389DF28B7ADD0004F30A3 /* GmarketSansBold.otf */,
+				76C389E128B7ADD0004F30A3 /* GmarketSansLight.otf */,
+				76C389E028B7ADD0004F30A3 /* GmarketSansMedium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		76C389E528B7AEC0004F30A3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				76C38A1628B7FD28004F30A3 /* Extension */,
+				76C38A0E28B7F614004F30A3 /* Realm */,
+				76C38A0228B7F013004F30A3 /* Manager */,
+				76C389EA28B7C0D1004F30A3 /* Cell */,
+				76C389E728B7B013004F30A3 /* Enum */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		76C389E728B7B013004F30A3 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				76C389E828B7B022004F30A3 /* Design.swift */,
+				76C389FE28B7EF9D004F30A3 /* APIkey.swift */,
+				76C38A0028B7EFDD004F30A3 /* EndPoint.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		76C389EA28B7C0D1004F30A3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				76C389EB28B7C0E9004F30A3 /* ShoppingListTableViewCell.swift */,
+				76C389FA28B7EEDD004F30A3 /* ImageSearchCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		76C38A0228B7F013004F30A3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				76C38A0328B7F01E004F30A3 /* APIManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		76C38A0E28B7F614004F30A3 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				76C38A0F28B7F624004F30A3 /* RealmModel.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		76C38A1628B7FD28004F30A3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				76C38A1728B7FD37004F30A3 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +238,12 @@
 			name = "iOS-ShoppingList";
 			packageProductDependencies = (
 				76C389D428B7A73F004F30A3 /* SnapKit */,
+				76C389F428B7DF0D004F30A3 /* TextFieldEffects */,
+				76C38A0628B7F06F004F30A3 /* Alamofire */,
+				76C38A0928B7F07E004F30A3 /* SwiftyJSON */,
+				76C38A0C28B7F239004F30A3 /* Kingfisher */,
+				76C38A1228B7F6E1004F30A3 /* Realm */,
+				76C38A1428B7F6E1004F30A3 /* RealmSwift */,
 			);
 			productName = "iOS-ShoppingList";
 			productReference = 76C389B228B7A4F5004F30A3 /* iOS-ShoppingList.app */;
@@ -144,6 +275,11 @@
 			mainGroup = 76C389A928B7A4F5004F30A3;
 			packageReferences = (
 				76C389D328B7A73F004F30A3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				76C389F328B7DF0D004F30A3 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				76C38A0528B7F06F004F30A3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				76C38A0828B7F07E004F30A3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				76C38A0B28B7F239004F30A3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				76C38A1128B7F6E1004F30A3 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 76C389B328B7A4F5004F30A3 /* Products */;
 			projectDirPath = "";
@@ -159,7 +295,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C389FD28B7EF80004F30A3 /* .gitignore in Resources */,
+				76C389E328B7ADD0004F30A3 /* GmarketSansMedium.otf in Resources */,
 				76C389BF28B7A4F6004F30A3 /* Assets.xcassets in Resources */,
+				76C389E228B7ADD0004F30A3 /* GmarketSansBold.otf in Resources */,
+				76C389E428B7ADD0004F30A3 /* GmarketSansLight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,9 +310,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C38A1828B7FD37004F30A3 /* UIViewController+Extension.swift in Sources */,
+				76C38A0428B7F01E004F30A3 /* APIManager.swift in Sources */,
 				76C389B628B7A4F5004F30A3 /* AppDelegate.swift in Sources */,
+				76C389EC28B7C0E9004F30A3 /* ShoppingListTableViewCell.swift in Sources */,
+				76C389FF28B7EF9D004F30A3 /* APIkey.swift in Sources */,
+				76C389E928B7B022004F30A3 /* Design.swift in Sources */,
+				76C389FB28B7EEDD004F30A3 /* ImageSearchCollectionViewCell.swift in Sources */,
 				76C389B828B7A4F5004F30A3 /* SceneDelegate.swift in Sources */,
+				76C389DB28B7ABB8004F30A3 /* BaseView.swift in Sources */,
+				76C389DD28B7AC28004F30A3 /* MainShoppingListView.swift in Sources */,
 				76C389D728B7A757004F30A3 /* BaseViewController.swift in Sources */,
+				76C389F728B7EB04004F30A3 /* ImageSearchViewController.swift in Sources */,
+				76C389F928B7EB5B004F30A3 /* ImageSearchView.swift in Sources */,
+				76C38A1028B7F624004F30A3 /* RealmModel.swift in Sources */,
+				76C389F028B7DC8F004F30A3 /* AddingItemView.swift in Sources */,
+				76C38A0128B7EFDD004F30A3 /* EndPoint.swift in Sources */,
+				76C389F228B7DCC1004F30A3 /* AddingItemViewController.swift in Sources */,
+				76C389D928B7ABA3004F30A3 /* MainShoppingLIstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +463,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,7 +492,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +538,46 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		76C389F328B7DF0D004F30A3 /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		76C38A0528B7F06F004F30A3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		76C38A0828B7F07E004F30A3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		76C38A0B28B7F239004F30A3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		76C38A1128B7F6E1004F30A3 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -390,6 +585,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 76C389D328B7A73F004F30A3 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		76C389F428B7DF0D004F30A3 /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76C389F328B7DF0D004F30A3 /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+		76C38A0628B7F06F004F30A3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76C38A0528B7F06F004F30A3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		76C38A0928B7F07E004F30A3 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76C38A0828B7F07E004F30A3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		76C38A0C28B7F239004F30A3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76C38A0B28B7F239004F30A3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		76C38A1228B7F6E1004F30A3 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76C38A1128B7F6E1004F30A3 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		76C38A1428B7F6E1004F30A3 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76C38A1128B7F6E1004F30A3 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

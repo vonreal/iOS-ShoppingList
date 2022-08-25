@@ -11,10 +11,5 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        main()
-        self.view.backgroundColor = .red
     }
-    
-    func main() { }
 }
