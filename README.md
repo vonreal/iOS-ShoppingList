@@ -10,5 +10,5 @@
 - ✅ 사진을 저장(C), 불러오기(R) 구현 완료 -> 🦺 도큐먼트 사진 삭제 구현<br>
 -  -> 🦺 백업 복구 구현 <br>
 
-![ezgif com-gif-maker (22)](https://user-images.githubusercontent.com/50474006/186749929-5ab9b270-c3a9-4bb0-9f4f-a273922ab6e6.gif)
-![ezgif com-gif-maker (23)](https://user-images.githubusercontent.com/50474006/186749935-0f849544-180f-4865-aa2a-cd38d5511827.gif)
+![ezgif com-gif-maker (24)](https://user-images.githubusercontent.com/50474006/186751176-d86bcf4d-35d7-41e8-aed0-d3b989ea3453.gif)
+
