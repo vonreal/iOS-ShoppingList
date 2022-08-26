@@ -29,6 +29,8 @@ class MainShoppingLIstViewController: BaseViewController {
         mainView.addButton.addTarget(self, action: #selector(addButtonClicked), for: .touchUpInside)
         mainView.sortButton.addTarget(self, action: #selector(sortButtonClicked), for: .touchUpInside)
         tasks = localRealm.objects(UserShoppingList.self).sorted(byKeyPath: "objectId", ascending: false)
+        
+        print("Realm is located at:", localRealm.configuration.fileURL!)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -65,7 +67,7 @@ extension MainShoppingLIstViewController: UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ShoppingListTableViewCell else { return UITableViewCell() }
         cell.itemNameLabel.text = tasks[indexPath.row].title
-        cell.itemImageView.image = loadImageFromDocument(filename: "\(tasks[indexPath.row].objectId).jpg")
+        cell.itemImageView.image = loadImageFromDocument(filename: "images/\(tasks[indexPath.row].objectId).jpg")
         return cell
     }
     
@@ -80,10 +82,14 @@ extension MainShoppingLIstViewController: UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let taskToDelete = tasks[indexPath.row]
+            
+            self.removeImageFromDocument(filename: "images/\(taskToDelete.objectId).jpg")
+            
             try! localRealm.write {
-              localRealm.delete(taskToDelete)
-              print("Delete Success")
+                localRealm.delete(taskToDelete)
+                print("Delete Success")
             }
+            
             tableView.reloadData()
         }
     }

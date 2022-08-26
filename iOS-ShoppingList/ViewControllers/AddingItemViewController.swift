@@ -37,7 +37,7 @@ class AddingItemViewController: BaseViewController {
             let task = UserShoppingList(title: title, photoURL: nil, registerDay: Date(), bookMark: false, done: false)
             
             if let image = mainView.itemImageView.image {
-                saveImageToDocument(filename: "\(task.objectId).jpg", image: image)
+                saveImageToDocument(filename: "images/\(task.objectId).jpg", image: image)
             }
             
             try! localRealm.write {
