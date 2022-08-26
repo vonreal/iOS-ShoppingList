@@ -28,6 +28,7 @@ class ShoppingListTableViewCell: UITableViewCell {
         imageView.backgroundColor = ColorDesign.customLightGray
         imageView.layer.cornerRadius = 10
         imageView.contentMode = .scaleToFill
+        imageView.clipsToBounds = true
         return imageView
     }()
     
