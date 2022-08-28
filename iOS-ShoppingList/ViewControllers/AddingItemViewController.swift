@@ -16,7 +16,7 @@ protocol SelectImageDelegate {
 class AddingItemViewController: BaseViewController {
 
     let mainView = AddingItemView()
-    let localRealm = try! Realm()
+    let localRealm = UserShoppingListRepository.repository.localRealm
     
     override func loadView() {
         super.loadView()
@@ -40,11 +40,15 @@ class AddingItemViewController: BaseViewController {
                 saveImageToDocument(filename: "images/\(task.objectId).jpg", image: image)
             }
             
-            try! localRealm.write {
-                localRealm.add(task)
-                print("Saved Success")
+            do {
+                try localRealm.write {
+                    localRealm.add(task)
+                    print("Saved Success")
+                }
+                self.dismiss(animated: true)
+            } catch {
+                popupAlertMessage(title: "데이터베이스 쓰기 오류", message: "저장에 실패했습니다.")
             }
-            self.dismiss(animated: true)
         }
     }
     

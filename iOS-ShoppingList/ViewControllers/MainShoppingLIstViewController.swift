@@ -13,8 +13,12 @@ import SwiftyJSON
 class MainShoppingLIstViewController: BaseViewController {
 
     let mainView = MainShoppingListView()
-    let localRealm = try! Realm()
-    var tasks: Results<UserShoppingList>!
+    let repository = UserShoppingListRepository.repository
+    var tasks: Results<UserShoppingList>! {
+        didSet {
+            mainView.shopplingListTableView.reloadData()
+        }
+    }
     
     override func loadView() {
         super.loadView()
@@ -26,11 +30,8 @@ class MainShoppingLIstViewController: BaseViewController {
         super.viewDidLoad()
         
         registerTableView()
-        mainView.addButton.addTarget(self, action: #selector(addButtonClicked), for: .touchUpInside)
-        mainView.sortButton.addTarget(self, action: #selector(sortButtonClicked), for: .touchUpInside)
-        tasks = localRealm.objects(UserShoppingList.self).sorted(byKeyPath: "objectId", ascending: false)
-        
-        print("Realm is located at:", localRealm.configuration.fileURL!)
+        setButtonEvent()
+        fetchRealm()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,6 +46,11 @@ class MainShoppingLIstViewController: BaseViewController {
         mainView.shopplingListTableView.register(ShoppingListTableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
+    func setButtonEvent() {
+        mainView.addButton.addTarget(self, action: #selector(addButtonClicked), for: .touchUpInside)
+        mainView.sortButton.addTarget(self, action: #selector(sortButtonClicked), for: .touchUpInside)
+    }
+    
     @objc func addButtonClicked() {
         let vc = AddingItemViewController()
         let nav = UINavigationController(rootViewController: vc)
@@ -53,8 +59,11 @@ class MainShoppingLIstViewController: BaseViewController {
     }
     
     @objc func sortButtonClicked() {
-        tasks = localRealm.objects(UserShoppingList.self).sorted(byKeyPath: "title", ascending: false)
-        mainView.shopplingListTableView.reloadData()
+        tasks = repository.fetchSortByTitle()
+    }
+    
+    func fetchRealm() {
+        tasks = repository.fetchRealm()
     }
 }
 
@@ -81,22 +90,16 @@ extension MainShoppingLIstViewController: UITableViewDelegate, UITableViewDataSo
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let taskToDelete = tasks[indexPath.row]
-            
-            self.removeImageFromDocument(filename: "images/\(taskToDelete.objectId).jpg")
-            
-            try! localRealm.write {
-                localRealm.delete(taskToDelete)
-                print("Delete Success")
+            let target = tasks[indexPath.row]
+            if !repository.fetchDeleteData(target: target) {
+                popupAlertMessage(title: "데이터베이스 실패", message: "삭제에 실패했습니다. 다시 시도해주세요.")
             }
-            
-            tableView.reloadData()
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = AddingItemViewController()
-        vc.mainView.itemImageView.image = loadImageFromDocument(filename: "\(tasks[indexPath.row].objectId).jpg")
+        vc.mainView.itemImageView.image = loadImageFromDocument(filename: "images/\(tasks[indexPath.row].objectId).jpg")
         vc.mainView.itemTextField.text = tasks[indexPath.row].title
         let nav = UINavigationController(rootViewController: vc)
         nav.modalPresentationStyle = .fullScreen

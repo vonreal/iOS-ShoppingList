@@ -26,5 +26,3 @@ class UserShoppingList: Object {
         self.done = done
     }
 }
-
-
