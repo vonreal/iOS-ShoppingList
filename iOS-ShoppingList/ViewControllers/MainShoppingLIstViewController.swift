@@ -143,9 +143,8 @@ extension MainShoppingLIstViewController: UITableViewDelegate, UITableViewDataSo
         let vc = AddingItemViewController()
         vc.mainView.itemImageView.image = loadImageFromDocument(filename: "images/\(tasks[indexPath.row].objectId).jpg")
         vc.mainView.itemTextField.text = tasks[indexPath.row].title
-        let nav = UINavigationController(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        self.present(nav, animated: true)
+        vc.mainView.addItemButton.isHidden = true
+        self.present(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
