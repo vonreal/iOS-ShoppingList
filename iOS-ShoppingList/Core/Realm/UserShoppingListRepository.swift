@@ -12,7 +12,7 @@ import RealmSwift
 protocol UserShoppingListRepositoryType {
     func printFileLocation()
     func fetchRealm() -> Results<UserShoppingList>
-    func fetchSort(keyPath: String) -> Results<UserShoppingList>
+    func fetchSort(keyPath: String, ascending: Bool) -> Results<UserShoppingList>
     func fetchDeleteData(target: UserShoppingList) -> Bool
     func removeImageFromDocument(filename: String)
 }
@@ -33,8 +33,8 @@ class UserShoppingListRepository: UserShoppingListRepositoryType {
         return localRealm.objects(UserShoppingList.self).sorted(byKeyPath: "objectId", ascending: false)
     }
     
-    func fetchSort(keyPath: String) -> Results<UserShoppingList> {
-        return localRealm.objects(UserShoppingList.self).sorted(byKeyPath: keyPath, ascending: false)
+    func fetchSort(keyPath: String, ascending: Bool) -> Results<UserShoppingList> {
+        return localRealm.objects(UserShoppingList.self).sorted(byKeyPath: keyPath, ascending: ascending)
     }
     
     func fetchDeleteData(target: UserShoppingList) -> Bool {
@@ -58,6 +58,26 @@ class UserShoppingListRepository: UserShoppingListRepositoryType {
             try FileManager.default.removeItem(at: fileURL)
         } catch let error {
             print(error)
+        }
+    }
+    
+    func fetchUpdateBookmark(target: UserShoppingList) {
+        do {
+            try localRealm.write {
+                target.bookMark.toggle()
+            }
+        } catch {
+            print("Faile to update to realm.")
+        }
+    }
+    
+    func fetchUpdateDone(target: UserShoppingList) {
+        do {
+            try localRealm.write {
+                target.done.toggle()
+            }
+        } catch {
+            print("Faile to update to realm.")
         }
     }
 }
