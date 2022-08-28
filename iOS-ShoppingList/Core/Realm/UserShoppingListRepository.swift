@@ -9,7 +9,15 @@ import Foundation
 
 import RealmSwift
 
-class UserShoppingListRepository {
+protocol UserShoppingListRepositoryType {
+    func printFileLocation()
+    func fetchRealm() -> Results<UserShoppingList>
+    func fetchSortByTitle() -> Results<UserShoppingList>
+    func fetchDeleteData(target: UserShoppingList)
+    func removeImageFromDocument(filename: String)
+}
+
+class UserShoppingListRepository: UserShoppingListRepositoryType {
     private init() { }
     
     static let repository = UserShoppingListRepository()
