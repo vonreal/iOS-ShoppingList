@@ -1,6 +1,13 @@
 # iOS-ShoppingList
 🛒 쇼핑 리스트를 코드베이스로 구현하는 iOS 프로젝트입니다 : )
 
+## 0829 기준
+- ✅ UIMenu 이용해서 추가 구현(즐겨찾기 순 등)<br>
+- ✅ 즐겨찾기, 할 일 완료 추가 구현 <br>
+- ✅ 도큐먼트 사진 삭제 구현<br>
+-  -> 🦺 백업 복구 구현 <br>
+![ezgif com-gif-maker (25)](https://user-images.githubusercontent.com/50474006/187086292-715b1642-ddbe-4ee0-930a-83b23e44fcee.gif)
+
 
 ## 0823 - 0825 과제
 * 구현한 것 -> 구현해야하는 것들 <br>
