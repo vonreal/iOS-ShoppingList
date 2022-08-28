@@ -12,12 +12,13 @@ import RealmSwift
 protocol UserShoppingListRepositoryType {
     func printFileLocation()
     func fetchRealm() -> Results<UserShoppingList>
-    func fetchSortByTitle() -> Results<UserShoppingList>
-    func fetchDeleteData(target: UserShoppingList)
+    func fetchSort(keyPath: String) -> Results<UserShoppingList>
+    func fetchDeleteData(target: UserShoppingList) -> Bool
     func removeImageFromDocument(filename: String)
 }
 
 class UserShoppingListRepository: UserShoppingListRepositoryType {
+    
     private init() { }
     
     static let repository = UserShoppingListRepository()
@@ -32,8 +33,8 @@ class UserShoppingListRepository: UserShoppingListRepositoryType {
         return localRealm.objects(UserShoppingList.self).sorted(byKeyPath: "objectId", ascending: false)
     }
     
-    func fetchSortByTitle() -> Results<UserShoppingList> {
-        return localRealm.objects(UserShoppingList.self).sorted(byKeyPath: "title", ascending: false)
+    func fetchSort(keyPath: String) -> Results<UserShoppingList> {
+        return localRealm.objects(UserShoppingList.self).sorted(byKeyPath: keyPath, ascending: false)
     }
     
     func fetchDeleteData(target: UserShoppingList) -> Bool {

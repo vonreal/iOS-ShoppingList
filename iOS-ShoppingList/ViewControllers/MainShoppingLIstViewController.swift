@@ -49,6 +49,7 @@ class MainShoppingLIstViewController: BaseViewController {
     func setButtonEvent() {
         mainView.addButton.addTarget(self, action: #selector(addButtonClicked), for: .touchUpInside)
         mainView.sortButton.addTarget(self, action: #selector(sortButtonClicked), for: .touchUpInside)
+        setSortButtonEvent()
     }
     
     @objc func addButtonClicked() {
@@ -59,7 +60,22 @@ class MainShoppingLIstViewController: BaseViewController {
     }
     
     @objc func sortButtonClicked() {
-        tasks = repository.fetchSortByTitle()
+        tasks = repository.fetchSort(keyPath: "objectId")
+    }
+    
+    func setSortButtonEvent() {
+        let bookMarkSortButton = UIAction(title: "즐겨찾기 순 정렬") { _ in
+            self.tasks = self.repository.fetchSort(keyPath: "bookMark")
+        }
+        let doneSortButton = UIAction(title: "할 일 기준 정렬") { _ in
+            self.tasks = self.repository.fetchSort(keyPath: "done")
+        }
+        let titleSortButton = UIAction(title: "제목 순 정렬") { _ in
+            self.tasks = self.repository.fetchSort(keyPath: "title")
+        }
+        
+        
+        mainView.sortButton.menu = UIMenu(title: "", image: nil, identifier: nil, options: UIMenu.Options.displayInline, children: [bookMarkSortButton, doneSortButton, titleSortButton])
     }
     
     func fetchRealm() {
